@@ -1,8 +1,8 @@
 :root {
-  --headerfont: rgb(219, 28, 28);
+  --headerfont: rgb(255, 255, 255);
   --black: black;
   --white: white;
-  --background: rgb(161, 177, 238);
+  --background: rgb(46, 73, 180);
   --backgroundlight: rgb(181, 193, 241);
   --headercolor: transparent;
   --accent: rgb(var(--accent-trip));
