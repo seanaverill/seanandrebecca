@@ -21,12 +21,12 @@ function stickyFunc() {
 var modal = document.getElementById("myModal");
 var modal2 = document.getElementById("beauportmodal");
 var modal3 = document.getElementById("oceanmodal");
-var modal4 = document.getElementById("blueshuttermodal");
+var modal4 = document.getElementById("airbnbmodal");
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 var btn2 = document.getElementById("beauportmodal-btn");
 var btn3 = document.getElementById("oceanmodal-btn");
-var btn4 = document.getElementById("blueshuttermodal-btn");
+var btn4 = document.getElementById("airbnbmodal-btn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 var span2 = document.getElementsByClassName("close2")[0];

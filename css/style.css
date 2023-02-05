@@ -715,6 +715,7 @@ height: 300px;
   color: var(--white);
   margin-bottom: 20px;
   margin-top: 5px;
+  letter-spacing: 2px;
 }
 
 .date {
