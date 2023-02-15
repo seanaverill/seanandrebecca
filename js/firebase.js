@@ -64,8 +64,11 @@ function getInputVal(id){
 
 // Save message to FIrebase
 function saveMessage(email, name, meal1, plus1Name, meal2){
-  var newMessageRef = messagesRef.push();
-  newMessageRef.set({
+
+let mGroupId = messagesRef.push().getKey();
+
+messagesRef.child(mGroupId).set({
+user:mGroupId,
 email: email,
 name: name,
 meal1: meal1,
