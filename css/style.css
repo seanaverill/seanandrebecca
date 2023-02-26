@@ -15,6 +15,7 @@
   --test: 150;
   --roundedcorner: 12px;
   --green: rgb(202, 225, 207);
+  --gray:#ccc;
   --darkgreen: rgb(89, 130, 92);
   --griddefault: 20% auto 8% 8% 8% 8% 8% 8%;
   --grid1480: 20% auto 15% 10% 10% 10% 15% 15%;
@@ -264,7 +265,7 @@ grid-column: 2;
   right: 0;
   bottom: 0;
   border-radius: var(--roundedcorner);
-  background-color: #ccc;
+  background-color: var(--gray);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -340,7 +341,7 @@ input:checked + .slider:before {
   text-transform: uppercase;
 }
 .rsvpshrink{
-padding-bottom: 100px;
+padding-bottom: 40px;
 }
 
 .logo {
@@ -419,7 +420,6 @@ margin-top: calc(var(--ofsettvalue)* -1);
 
 
 .pages {
-  position: sticky;
   width: 100%;
   margin: 0 auto 0 auto;
   top: 65px; 
@@ -456,7 +456,7 @@ background-color: white;
 
 .page5 {
   padding-top: 10px;
-  height: calc(100vh - 65px);
+  padding-bottom: 50px;
   background-color: var(--white);
 }
 
@@ -816,7 +816,7 @@ height: 300px;
 form{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 60px 60px 1fr 60px auto auto 60px;
   gap: 10px;
 
 }
@@ -831,24 +831,106 @@ grid-row: 1 / span 1;
   grid-row: 2 / span 1;
 }
 
-.meal1{
+#meal1{
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
 }
 
+.allergies{
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 1fr;
+  column-gap: 10px;
+}
+
+.allergies2{
+  display: none;
+  grid-column: 1 / span 2;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 1fr;
+  column-gap: 10px;
+  padding-bottom: 15px;
+}
+
+.allergies>p{
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 4;
+}
+
+.allergies2>p{
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 4;
+}
+
+.gflabel,.nutlabel,.veganlabel{
+  background: var(--white);
+  color:var(--accent);
+  padding: 5px 8px;
+  border-radius: 5px;
+  grid-row: 2;
+  align-self: center;
+  height: 40px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  border:solid 2px var(--accent);
+}
+
+input[type='checkbox']{
+  position: absolute;
+  left:-999px;
+  opacity: 0;
+}
+
+#gf:checked+.gflabel,#nuts:checked+.nutlabel,#vegan:checked+.veganlabel{
+background-color: var(--accent);
+  color:var(--white);
+}
+
+#otherallergy{
+    grid-row: 2;
+}
+
+.gflabel2,.nutlabel2,.veganlabel2{
+  background: var(--white);
+  color:var(--accent);
+  padding: 5px 8px;
+  border-radius: 5px;
+  grid-row: 2;
+  align-self: center;
+  height: 40px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  border:solid 2px var(--accent);
+}
+
+#gf2:checked+.gflabel2,#nuts2:checked+.nutlabel2,#vegan2:checked+.veganlabel2{
+background-color: var(--accent);
+  color:var(--white);
+}
+
+#otherallergy2{
+    grid-row: 2;
+}
+
 .name2{
   grid-column: 1 / span 1;
-  grid-row: 4 / span 1;
+  grid-row: 5 / span 1;
+  height: 60px;
 }
 
 .meal2{
   grid-column: 2 / span 1;
-  grid-row: 4 / span 1;
+  grid-row: 5 / span 1;
+  height: 60px;
+
 }
 
 .submitbutton{
   grid-column: 1 / span 2;
-  grid-row: 5 / span 1;
+  grid-row: 7 / span 1;
   border: none;
   border-radius: 20px;
   background-color: var(--accent);

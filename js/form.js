@@ -4,6 +4,7 @@ function plusOne() {
     // Get the output text
     var text = document.getElementById("plus1Name");
     var meal = document.getElementById("meal2");
+    var allergy = document.getElementById("allergies2");
 
     // If the checkbox is checked, display the output text
     if (checkBox.checked == true){
@@ -23,4 +24,13 @@ function plusOne() {
             meal.style.display = "none";
             meal.required = false;
           }
+
+                  // If the checkbox is checked, display the output text
+        if (checkBox.checked == true){
+          allergy.style.display = "grid";
+          allergy.required = true;
+        } else {
+          allergy.style.display = "none";
+          allergy.required = false;
+        }
   }

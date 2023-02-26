@@ -457,7 +457,7 @@
                     <option value="Jeff Averill">Jeff Averill</option>
                     <option value="Laura Averill">Laura Averill</option>
                     <option value="Aram Barseghyan">Aram Barseghyan</option>
-                    <option value="Aram's Wife Barseghyan">Aram's Wife Barseghyan</option>
+                    <option value="Lori Farina">Lori Farina</option>
                     <option value="Lynne Bean">Lynne Bean</option>
                     <option value="Steve Bean">Steve Bean</option>
                     <option value="Luke Beatrice">Luke Beatrice</option>
@@ -469,6 +469,7 @@
                     <option value="Jessica Brofsky">Jessica Brofsky</option>
                     <option value="Jill Brofsky">Jill Brofsky</option>
                     <option value="Marc Brofsky">Marc Brofsky</option>
+                    <option value="Aaron Buchholz">Aaron Buchholz</option>
                     <option value="Gonzalo Cadarso Ruiz">Gonzalo Cadarso Ruiz</option>
                     <option value="Zachary Clifford">Zachary Clifford</option>
                     <option value="Karen Cloutman">Karen Cloutman</option>
@@ -494,6 +495,7 @@
                     <option value="Marion Houser">Marion Houser</option>
                     <option value="Andy Houser">Andy Houser</option>
                     <option value="Salvatore Iacono">Salvatore Iacono</option>
+                    <option value="Katelyn Keefe">Katelyn Keefe</option>
                     <option value="Elliott Koplitz">Elliott Koplitz</option>
                     <option value="Marc Kruger">Marc Kruger</option>
                     <option value="Danielle Kruger">Danielle Kruger</option>
@@ -527,7 +529,7 @@
                     <option value="Pat Rogowicz">Pat Rogowicz</option>
                     <option value="Amanda Sergeyev">Amanda Sergeyev</option>
                     <option value="Juzar Shakir">Juzar Shakir</option>
-                    <option value="Juzar's Wife Shakir">Juzar's Wife Shakir</option>
+                    <option value="Tas Shakir">Tas Shakir</option>
                     <option value="Meg Shelley">Meg Shelley</option>
                     <option value="Frank Shelley">Frank Shelley</option>
                     <option value="Drew Siegel">Drew Siegel</option>
@@ -562,6 +564,8 @@
 
                 </datalist>
 
+ 
+
 
                 <select type="combobox" id="meal1" name="meal1" placeholder="Meal Choice" required="true">
                     <option value="" disabled selected hidden> -- Select a Meal -- </option>
@@ -569,6 +573,20 @@
                     <option value="Fish">Fish</option>
                     <option value="Vegetarian/Vegan">Vegetarian/Vegan</option>
                 </select>
+
+                <div class="allergies">
+                    <p>Required Modifications?</p>
+                    <input type="checkbox" name="Gluten Free" id="gf">
+                    <label class="gflabel" for="gf">Gluten Free</label> 
+
+                    <input type="checkbox" name="Nut Allergy" id="nuts">
+                    <label class="nutlabel" for="nuts">Nut Allergy</label>
+
+                    <input type="checkbox" name="Vegan" id="vegan">
+                    <label class="veganlabel" for="vegan">Vegan</label> 
+
+                    <input type="text" name="other allergy" id="otherallergy" placeholder="Other">
+                </div>
 
                 <p>Second guest or plus one?</p>
 
@@ -593,7 +611,19 @@
                     <option value="Fish">Fish</option>
                     <option value="Vegetarian/Vegan">Vegetarian/Vegan</option>
                 </select>
+                <div class="allergies2" id="allergies2">
+                    <p>Required Modifications?</p>
+                    <input type="checkbox" name="Gluten Free" id="gf2">
+                    <label class="gflabel2" for="gf2">Gluten Free</label> 
 
+                    <input type="checkbox" name="Nut Allergy" id="nuts2">
+                    <label class="nutlabel2" for="nuts2">Nut Allergy</label>
+
+                    <input type="checkbox" name="Vegan" id="vegan2">
+                    <label class="veganlabel2" for="vegan2">Vegan</label> 
+
+                    <input type="text" name="other allergy" id="otherallergy2" placeholder="Other">
+                </div>
 
                 <button type="submit" class="submitbutton">Submit</button>
             </form>

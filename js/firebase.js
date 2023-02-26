@@ -42,8 +42,19 @@ function submitForm(e){
   var plus1Name = getInputVal('plus1Name');
   var meal2 = getInputVal('meal2');
 
+  var gf = document.getElementById('gf').checked;
+  var nuts = document.getElementById('nuts').checked;
+  var vegan = document.getElementById('vegan').checked;
+  var otherallergy = getInputVal('otherallergy');
+
+  var gf2 = document.getElementById('gf2').checked;
+  var nuts2 = document.getElementById('nuts2').checked;
+  var vegan2 = document.getElementById('vegan2').checked;
+  var otherallergy2 = getInputVal('otherallergy2');
+
+
   // Save message
-  saveMessage(email, name, meal1, plus1Name, meal2);
+  saveMessage(email, name, meal1, plus1Name, meal2, gf, nuts, vegan, otherallergy, gf2, nuts2, vegan2, otherallergy2);
 
   // Show alert
   document.querySelector('.alert').style.display = 'block';
@@ -63,7 +74,7 @@ function getInputVal(id){
 }
 
 // Save message to FIrebase
-function saveMessage(email, name, meal1, plus1Name, meal2){
+function saveMessage(email, name, meal1, plus1Name, meal2, gf, nuts, vegan, otherallergy, gf2, nuts2, vegan2, otherallergy2){
 
 let mGroupId = messagesRef.push().getKey();
 
@@ -73,7 +84,15 @@ email: email,
 name: name,
 meal1: meal1,
 plus1Name: plus1Name,
-meal2: meal2
+meal2: meal2,
+gf: gf,
+nuts: nuts,
+vegan: vegan,
+otherallergy: otherallergy,
+gf2: gf2,
+nuts2: nuts2,
+vegan2: vegan2,
+otherallergy2: otherallergy2
   });
 }
 
