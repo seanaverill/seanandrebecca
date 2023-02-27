@@ -568,7 +568,7 @@
 
 
                 <select type="combobox" id="meal1" name="meal1" placeholder="Meal Choice" required="true">
-                    <option value="" disabled selected hidden> -- Select a Meal -- </option>
+                    <option value="" disabled selected hidden>Select a Meal</option>
                     <option value="Chicken">Chicken</option>
                     <option value="Fish">Fish</option>
                     <option value="Vegetarian/Vegan">Vegetarian/Vegan</option>
@@ -591,7 +591,7 @@
                 <p class="secondQ">Second guest or plus one?</p>
 
 
-                <label class="switch">
+                <label class="switch" for="plus1">
                     <input type="checkbox" id="plus1" name="plus1" class="plus1" onclick="plusOne()">
                     <span class="slider"><span class="textyesno"></span></span>
                 </label>
@@ -606,7 +606,7 @@
 
 
                 <select id="meal2" class="meal2" name="meal2" style="display:none" placeholder="Meal Choice">
-                    <option value="" disabled selected value> -- Select a Meal -- </option>
+                    <option value="" disabled selected value>Select a Meal</option>
                     <option value="Chicken">Chicken</option>
                     <option value="Fish">Fish</option>
                     <option value="Vegetarian/Vegan">Vegetarian/Vegan</option>
@@ -624,6 +624,16 @@
 
                     <input type="text" name="other allergy" id="otherallergy2" placeholder="Other">
                 </div>
+
+
+                <p class="brunchQ">Will you be joining us for brunch Monday?</p>
+
+
+                <label class="switch2" for="brunch">
+                    <input type="checkbox" id="brunch" name="brunch" class="brunch">
+                    <span class="slider"><span class="textyesno"></span></span>
+                </label>
+
 
                 <button type="submit" class="submitbutton">Submit</button>
             </form>

@@ -10,27 +10,21 @@ function plusOne() {
     if (checkBox.checked == true){
       text.style.display = "block";
       text.required = true;
+      text.style.height = "40px";
+      meal.style.display = "block";
+      meal.style.height = "40px";
+      meal.required = true;
+      allergy.style.display = "grid";
+      allergy.required = true;
     } else {
       text.style.display = "none";
       text.required = false;
+      text.style.height = "0px";
+      meal.style.display = "none";
+      meal.required = false;
+      allergy.style.display = "none";
+      allergy.required = false;
+      meal.style.height = "0px";
     }
 
-
-        // If the checkbox is checked, display the output text
-        if (checkBox.checked == true){
-            meal.style.display = "block";
-            meal.required = true;
-          } else {
-            meal.style.display = "none";
-            meal.required = false;
-          }
-
-                  // If the checkbox is checked, display the output text
-        if (checkBox.checked == true){
-          allergy.style.display = "grid";
-          allergy.required = true;
-        } else {
-          allergy.style.display = "none";
-          allergy.required = false;
-        }
   }

@@ -52,9 +52,11 @@ function submitForm(e){
   var vegan2 = document.getElementById('vegan2').checked;
   var otherallergy2 = getInputVal('otherallergy2');
 
+  var brunch = document.getElementById('brunch').checked;
+
 
   // Save message
-  saveMessage(email, name, meal1, plus1Name, meal2, gf, nuts, vegan, otherallergy, gf2, nuts2, vegan2, otherallergy2);
+  saveMessage(email, name, meal1, plus1Name, meal2, gf, nuts, vegan, otherallergy, gf2, nuts2, vegan2, otherallergy2, brunch);
 
   // Show alert
   document.querySelector('.alert').style.display = 'block';
@@ -74,7 +76,7 @@ function getInputVal(id){
 }
 
 // Save message to FIrebase
-function saveMessage(email, name, meal1, plus1Name, meal2, gf, nuts, vegan, otherallergy, gf2, nuts2, vegan2, otherallergy2){
+function saveMessage(email, name, meal1, plus1Name, meal2, gf, nuts, vegan, otherallergy, gf2, nuts2, vegan2, otherallergy2, brunch){
 
 let mGroupId = messagesRef.push().getKey();
 
@@ -92,7 +94,8 @@ otherallergy: otherallergy,
 gf2: gf2,
 nuts2: nuts2,
 vegan2: vegan2,
-otherallergy2: otherallergy2
+otherallergy2: otherallergy2,
+brunch: brunch
   });
 }
 
