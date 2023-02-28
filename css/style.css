@@ -940,17 +940,31 @@ background-color: var(--accent);
   border:none;
   border-radius: 50px;
   text-align: center;
-  background-color: var(--accent);
-  color: var(--white);
+  background-color: var(--gray);
+  color: var(--black);
   font-size: 16px;
 }
 
-#otherallergy::placeholder,#otherallergy2::placeholder{
+.textfill{
+  background-color: var(--accent);
+}
+
+
+/* #otherallergy::placeholder,#otherallergy2::placeholder{
 color: var(--graytext);
 font-size: 16px;
 background-color: var(--gray);
 padding: 20px;
+overflow: hidden;
 }
+
+#otherallergy::-webkit-input-placeholder{
+color: var(--graytext);
+font-size: 16px;
+background-color: rgba(248, 248, 248, 0);
+padding: 0px;
+overflow: hidden;
+} */
 
 .name2{
   grid-column: 1 / span 1;
