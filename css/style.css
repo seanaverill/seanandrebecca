@@ -1646,9 +1646,7 @@ ol{
   padding-inline-start: 5px;
   margin-block-start: 0;
 }
-li{
 
-}
 
 .hoteltitle{
   margin-top: 5px;
@@ -1713,9 +1711,6 @@ li{
     padding: 10px 20px;
   }
 
-  .griditem1 {
-
-  }
   
   .griditem2 {
 display: none;
@@ -1736,9 +1731,6 @@ display: none;
     display: none;
   }
   
-  .griditem5 {
-
-  }
   .waves {
     height: 16vh;
     min-height: 40px;
