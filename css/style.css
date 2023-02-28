@@ -493,7 +493,6 @@ background-color: var(--white);
 
 .page8 {
   padding-top: 10px;
-  height: calc(100vh - 65px);
   background-color: var(--accent);
 }
 
@@ -509,6 +508,8 @@ background-color: var(--white);
 
 .page8 .centered{
   width: 80%;
+  padding-bottom: 10px;
+
 }
 
 .adivbtn{
@@ -2020,7 +2021,7 @@ aspect-ratio: 1/2;
 object-fit: cover;
 transition: scale 250ms ease, opacity 250ms linear;
 border-radius: 2rem;
-filter: blur(2px) contrast(80%) brightness(80%);
+filter:  contrast(80%) brightness(80%);
 }
 
 
@@ -2031,7 +2032,7 @@ border-radius: 2rem;
 }
 
 img:has(+ .img-descr:hover){
-filter: blur(0px) contrast(90%) brightness(100%);
+filter: contrast(90%) brightness(100%);
 }
 
 
