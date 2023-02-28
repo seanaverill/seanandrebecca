@@ -830,7 +830,7 @@ height: 300px;
 form{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 40px 40px 1fr 60px auto auto 60px 60px;
+  grid-template-rows: 40px 40px 1fr auto auto auto auto 60px;
   gap: 10px;
 }
 
@@ -1810,7 +1810,7 @@ font-size: 28px;
 
 form{
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 40px 40px 1fr 60px auto auto 60px 60px;
+  grid-template-rows: 40px 40px 1fr auto auto auto auto 60px;
   gap: 10px;
 }
 
