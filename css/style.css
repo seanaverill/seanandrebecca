@@ -1795,9 +1795,11 @@ font-size: 28px;
 }
 
 form{
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 40px 40px 1fr 60px auto auto 60px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px 40px 1fr 60px auto auto 60px 60px;
+  gap: 10px;
 }
+
 
 .centered h1{
   font-size: 45px;
@@ -1821,7 +1823,20 @@ font-size: 45px;
   display: none;
 }
 
+.allergies, .allergies2 {
+  grid-column: 1 / span 2;
 
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 1fr;
+  column-gap: 10px;
+}
+
+#otherallergy, #otherallergy2 {
+  grid-row: 3;
+  height: 80%;
+  grid-column: 1 / span 3;
+  margin-top: 20px;
+}
 
 
           .menuToggle
