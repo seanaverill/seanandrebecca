@@ -427,6 +427,15 @@
             <!-- FORM -->
 
             <form id="rsvpForm">
+
+                <p class="attendQ">Will you be able to attend?</p>
+
+
+                <label class="switch3" for="attend">
+                    <input type="checkbox" id="attend" name="attend" class="attend">
+                    <span class="slider"><span class="textyesno"></span></span>
+                </label>
+
                 <input type="email" id="email" name="email" placeholder="example@gmail.com" class="email"
                     required="true">
 
@@ -567,7 +576,7 @@
  
 
 
-                <select type="combobox" id="meal1" name="meal1" placeholder="Meal Choice" required="true">
+                <select type="combobox" id="meal1" name="meal1" placeholder="Meal Choice">
                     <option value="" disabled selected hidden>Select a Meal</option>
                     <option value="Chicken">Chicken</option>
                     <option value="Fish">Fish</option>

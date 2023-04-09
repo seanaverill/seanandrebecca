@@ -36,6 +36,8 @@ function submitForm(e){
   e.preventDefault();
 
   // Get Values
+  var attend = document.getElementById('attend').checked;
+
   var email = getInputVal('email');
   var name = getInputVal('name');
   var meal1 = getInputVal('meal1');
@@ -56,7 +58,7 @@ function submitForm(e){
 
 
   // Save message
-  saveMessage(email, name, meal1, plus1Name, meal2, gf, nuts, vegan, otherallergy, gf2, nuts2, vegan2, otherallergy2, brunch);
+  saveMessage(attend, email, name, meal1, plus1Name, meal2, gf, nuts, vegan, otherallergy, gf2, nuts2, vegan2, otherallergy2, brunch);
 
   // Show alert
   document.querySelector('.alert').style.display = 'block';
@@ -76,12 +78,13 @@ function getInputVal(id){
 }
 
 // Save message to FIrebase
-function saveMessage(email, name, meal1, plus1Name, meal2, gf, nuts, vegan, otherallergy, gf2, nuts2, vegan2, otherallergy2, brunch){
+function saveMessage(attend, email, name, meal1, plus1Name, meal2, gf, nuts, vegan, otherallergy, gf2, nuts2, vegan2, otherallergy2, brunch){
 
 let mGroupId = messagesRef.push().getKey();
 
 messagesRef.child(mGroupId).set({
 user:mGroupId,
+attend: attend,
 email: email,
 name: name,
 meal1: meal1,
