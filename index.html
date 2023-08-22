@@ -422,7 +422,8 @@
             <h1 class="rsvp">RSVP</h1>
             <div class="rsvpshrink" style="display:block;"></div>
             <div class="alert" style="display:none;">Thank you for your RSVP!</div>
-            <p> Please let us know if you will be joining us for this celebration! We hope to see you there!</p>
+            <p>Please let us know if you will be joining us for this celebration, we hope to see you there!  You can find the event schedule <a class="scheduleref" href="#schedule"><u>below</u></a>.
+            
 
             <!-- FORM -->
 
@@ -442,7 +443,7 @@
                 <input type="text" id="name" name="name" class="name" role="combobox" autocomplete="off"
                     placeholder="First and Last Name" required="true" list="suggestions">
                 <!-- type="text" pattern="^\S+\s\S+$" -->
-                <datalist id="suggestions" role="listbox">
+                <!-- <datalist id="suggestions" role="listbox">
                     <option value="Hana Ajalat">Hana Ajalat</option>
                     <option value="Sabrina Alessandro">Sabrina Alessandro</option>
                     <option value="Joel Alper">Joel Alper</option>
@@ -571,7 +572,7 @@
                     <option value="Lynne ">Lynne </option>
                     <option value="Red ">Red </option>
 
-                </datalist>
+                </datalist> -->
 
  
 
@@ -634,6 +635,13 @@
                     <input type="text" name="other allergy" id="otherallergy2" onkeypress="colorChange2()" placeholder="Other">
                 </div>
 
+                <p class="cocktailQ">Will you be joining us for cocktails Saturday evening?</p>
+
+
+                <label class="switch4" for="cocktails">
+                    <input type="checkbox" id="cocktails" name="cocktails" class="cocktails">
+                    <span class="slider"><span class="textyesno"></span></span>
+                </label>
 
                 <p class="brunchQ">Will you be joining us for brunch Monday?</p>
 
@@ -644,13 +652,7 @@
                 </label>
 
 
-                <p class="cocktailQ">Will you be joining us for cocktails Saturday evening?</p>
-
-
-                <label class="switch4" for="cocktails">
-                    <input type="checkbox" id="cocktails" name="cocktails" class="cocktails">
-                    <span class="slider"><span class="textyesno"></span></span>
-                </label>
+             
 
 
                 <button type="submit" class="submitbutton">Submit</button>
@@ -660,6 +662,13 @@
 
 
 
+        </div>
+    </div>
+    <div class="pages page9">
+        <div class="centered">
+            <h1 class="schedule">SCHEDULE</h1>
+            <p>Please arrive no later than 3pm, can't wait to see you there!</p>
+           
         </div>
     </div>
     <div class="offsetbutton" id="section8"></div>

@@ -488,6 +488,11 @@ background-color: var(--white);
   background-color: var(--accent);
 }
 
+.page9 {
+  padding-top: 10px;
+  background-color: var(--background);
+}
+
 .page8 .centered p{
   color: var(--white);
 }
@@ -2068,4 +2073,9 @@ filter: contrast(90%) brightness(100%);
 
 .image-grid > a{
   color: var(--companylinktext);
+}
+
+
+.scheduleref{
+  color: var(--accent) !important;
 }
