@@ -245,25 +245,7 @@ grid-column: 2;
   margin-bottom: 0;
 }
 
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 120px;
-  height: 34px;
-  margin-top: 10px;
-  margin: auto;
-}
-
-.switch2 {
-  position: relative;
-  display: inline-block;
-  width: 120px;
-  height: 34px;
-  margin-top: 10px;
-  margin: auto;
-}
-
-.switch3 {
+.switch, .switch2, .switch3, .switch4 {
   position: relative;
   display: inline-block;
   width: 120px;
@@ -841,7 +823,7 @@ height: 300px;
 form{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 60px 40px 40px 1fr auto auto auto auto 60px;
+  grid-template-rows: 60px 40px 40px 1fr auto auto auto auto auto 60px;
   gap: 10px;
 }
 
@@ -894,9 +876,18 @@ background: var(--lightgray);
 }
 
 .brunchQ,.switch2{
-  grid-row: 8;
+  grid-row: 9;
 }
 
+.cocktailQ{
+  grid-row: 8;
+  /* margin-top: -20px;
+  padding-top: 15px; */
+}
+.switch4{
+  grid-row: 8;
+  /* margin-top: -10px; */
+}
 
 .attendQ,.switch3{
   grid-row: 1;
@@ -999,7 +990,7 @@ overflow: hidden;
 
 .submitbutton{
   grid-column: 1 / span 2;
-  grid-row: 9 / span 1;
+  grid-row: 10 / span 1;
   border: none;
   border-radius: 20px;
   background-color: var(--accent);
@@ -1818,7 +1809,7 @@ font-size: 28px;
 
 form{
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 60px 40px 40px 1fr auto auto auto auto 60px;
+  grid-template-rows: 60px 40px 40px 1fr auto auto auto auto auto 60px;
   gap: 10px;
 }
 
