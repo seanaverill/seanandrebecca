@@ -2084,22 +2084,26 @@ filter: contrast(90%) brightness(100%);
   text-align: center;
   color: var(--accent);
   font-size: 1.4rem;
-  font-family: 'EB Garamond';
+  font-family: 'Inter';
 }
 
 .schedule{
   display: grid;
-  grid-template-columns: 80px 1fr 400px 1fr ;
-  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-columns: 120px 150px auto 150px ;
+  grid-template-rows: auto 100px auto 100px auto 100px auto 100px auto 100px auto;
   align-items: center;
   justify-items: center;
   margin: 80px auto 80px auto;
-  row-gap: 100px;
-  width: 80%;
+  /* row-gap: 100px; */
+  /* width: 100%; */
+  /* background-color: #ffffff8c; */
+  border-radius: 40px;
 }
 
 .datetime{
-  font-size: 3.5rem;
+  font-size: 3.2rem;
+  align-self: bottom;
+  padding-top: 20px;
 }
 
 .timelabel{
@@ -2149,17 +2153,17 @@ filter: contrast(90%) brightness(100%);
   position: relative;
 }
 
-.welcome::after{
+/* .welcome::after{
   content: "";
   position: absolute;
   top: 200px;
-  left: -400px;
-  width: 1000px;
+  left: -50%;
+  width: 100%;
   height: 2px;
   background-color: var(--accent);
-  opacity: 1; /* Adjust opacity as needed */
-  z-index: 12; /* Place the ::after element behind the content */
-}
+  opacity: 1; 
+  z-index: 12; 
+} */
 
 .welcomeimg{
   grid-row: 1;
@@ -2167,10 +2171,18 @@ filter: contrast(90%) brightness(100%);
   justify-self: start;
 }
 
+.gap1{
+  background-color: var(--accent);
+  grid-column: 1 / span 4;
+  grid-row: 2;
+  width: 100%;
+  height: 2px;
+}
+
 
 
 .datetimeline2{
-  grid-row: 2 / span 4;
+  grid-row: 3 / span 7;
   grid-column: 1;
   transform: rotate(-90deg);
   width: 500px;
@@ -2178,7 +2190,7 @@ filter: contrast(90%) brightness(100%);
 
 
 .ceremony{
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 3;
   position: relative;
 }
@@ -2197,60 +2209,80 @@ filter: contrast(90%) brightness(100%);
 
 
 .ceremonyimg{
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 2;
   justify-self: end;
 }
 
+.gap2{
+  grid-row: 4;
+  grid-column: 1 / span 4;
+}
+
 .cocktail{
-  grid-row: 3;
+  grid-row: 5;
   grid-column: 3;
   position: relative;
 }
 
 .cocktailimg{
-  grid-row: 3;
+  grid-row: 5;
   grid-column: 4;
   justify-self: start;
 }
-
+.gap3{
+  grid-row: 6;
+  grid-column: 1 / span 4;
+}
 .reception{
-  grid-row: 4;
+  grid-row: 7;
   grid-column: 3;
   position: relative;
 }
 
 .receptionimg{
-  grid-row: 4;
+  grid-row: 7;
   grid-column: 2;
   justify-self: end;
 }
+.gap4{
+  grid-row: 8;
+  grid-column: 1 / span 4;
+}
 
 .afterparty{
-  grid-row: 5;
+  grid-row: 9;
   grid-column: 3;
 }
 
 .afterpartyimg{
-  grid-row: 5;
+  grid-row: 9;
   grid-column: 4;
   justify-self: start;
 }
 
+.gap5{
+  grid-row: 10;
+  grid-column: 1 / span 4;
+  background-color: var(--accent);
+  width: 100%;
+  height: 2px;
+}
+
 .datetimeline3{
-  grid-row: 6 / span 1;
+  grid-row: 11 / span 1;
   grid-column: 1;
   transform: rotate(-90deg);
   width: 200px;
 }
 
 .brunch{
-  grid-row: 6;
+  grid-row: 11;
   grid-column: 3;
   position: relative;
 }
 
-.brunch::after{
+/* .brunch::after{
   content: "";
   position: absolute;
   top: -70px;
@@ -2258,13 +2290,30 @@ filter: contrast(90%) brightness(100%);
   width: 1000px;
   height: 2px;
   background-color: var(--accent);
-  opacity: 1; /* Adjust opacity as needed */
-  z-index: 12; /* Place the ::after element behind the content */
-}
+  opacity: 1; 
+  z-index: 12; 
+} */
 
 .brunchimg{
-  grid-row: 6;
+  grid-row: 11;
   grid-column: 2;
   justify-self: end;
 }
 
+.schedulebutton{
+  background-color: var(--background);
+  font-size: 2.2rem;
+  cursor: pointer;
+  margin-top: 60px;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 40px 10px 40px;
+  color: var(--accent);
+  text-transform: uppercase;
+  font-family: 'Inter';
+  font-weight: 600;
+}
+
+.fa-calendar-days{
+padding-right: 25px;  
+}
