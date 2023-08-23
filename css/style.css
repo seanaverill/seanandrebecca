@@ -2198,7 +2198,7 @@ filter: contrast(90%) brightness(100%);
 .ceremony::after,.cocktail::after,.reception::after{
   content: "";
   position: absolute;
-  top: 145px;
+  top: 125px;
   left: 50%;
   width: 2px;
   height: 80px;
