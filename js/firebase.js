@@ -63,8 +63,8 @@ function submitForm(e){
   saveMessage(attend, email, name, meal1, plus1Name, meal2, gf, nuts, vegan, otherallergy, gf2, nuts2, vegan2, otherallergy2, brunch, cocktails);
 
   // Show alert
-  document.querySelector('.alert').style.display = 'block';
-  document.querySelector('.rsvpshrink').style.display = 'none';
+  // document.querySelector('.alert').style.display = 'block';
+  // document.querySelector('.rsvpshrink').style.display = 'none';
   window.location.href = 'thankyou.html';
 
 
