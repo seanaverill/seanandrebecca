@@ -65,12 +65,14 @@ function submitForm(e){
   // Show alert
   document.querySelector('.alert').style.display = 'block';
   document.querySelector('.rsvpshrink').style.display = 'none';
+  window.location.href = 'thankyou.html';
 
-  setTimeout(function(){
-    document.querySelector('.alert').style.display = 'none';
-    document.querySelector('.rsvpshrink').style.display = 'block';
 
-  }, 6000);
+  // setTimeout(function(){
+  //   document.querySelector('.alert').style.display = 'none';
+  //   document.querySelector('.rsvpshrink').style.display = 'block';
+
+  // }, 6000);
 
 }
 
